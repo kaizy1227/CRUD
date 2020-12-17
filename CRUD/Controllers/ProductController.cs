@@ -41,7 +41,7 @@ namespace CRUD.Controllers
                 return View(product);
             }
             return RedirectToAction("Index", "Product");
-            // return RedirectToAction(actionName: "Index",controllerName:"Product");
+            // return RedirectToAction(actionName: "Index",controllerName:"Product");ghdghdghdghdgh
         }
         [HttpPost]
         public IActionResult Edit(Product product)
@@ -64,6 +64,7 @@ namespace CRUD.Controllers
             if (product != null)
             {
                 Products.Remove(product);
+
             }
             return RedirectToAction("Index");
         }
